@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 136597804527790670}
   - component: {fileID: 54534853172239272}
   - component: {fileID: 114430410898143592}
+  - component: {fileID: 114997076553738912}
   m_Layer: 9
   m_Name: Capsule
   m_TagString: Untagged
@@ -102,8 +103,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1523419519614976}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.29900002, z: 0.158}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0.383, z: 0.219}
+  m_LocalScale: {x: 0.79, y: 0.79, z: 0.79}
   m_Children: []
   m_Father: {fileID: 4931404578132146}
   m_RootOrder: 0
@@ -115,7 +116,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1964621931644616}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.09, y: 1.97, z: -0.042188227}
+  m_LocalPosition: {x: 0.09, y: 0.76, z: -0.042188227}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4157922022348832}
@@ -274,7 +275,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!81 &81688034779059742
 AudioListener:
@@ -294,9 +295,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fa6b3a052e7c2c4889bdc78df24a42b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 1265383269084996, guid: adf787d101299f3409846e6848434d0f,
-    type: 2}
-  bulletSpawn: {fileID: 0}
+  movementSpeed: 68.53
+  cooldownRate: 1
   camRayLength: 100
   floorMask: 0
 --- !u!114 &114792276697095754
@@ -311,8 +311,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 4931404578132146}
-  distance: 10
-  offset: 10
+  distance: 18.5
+  offset: 14
+--- !u!114 &114997076553738912
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1283574493028196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1745c9b0ad4e0b3439f20569039795ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 1265383269084996, guid: adf787d101299f3409846e6848434d0f,
+    type: 2}
 --- !u!135 &135948323930827084
 SphereCollider:
   m_ObjectHideFlags: 1
