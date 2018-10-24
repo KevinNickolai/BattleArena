@@ -11,9 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c774a16241112947ae4ac04747a1bed, type: 3}
   m_Name: ShootArrow
   m_EditorClassIdentifier: 
-  aName: Default Ability
+  aName: Shoot Arrow
   aDescription: Blank
   aSound: {fileID: 0}
   aSprite: {fileID: 0}
   aBaseCooldown: 1
-  projectilePrefab: {fileID: 0}
+  projectilePrefab: {fileID: 1265383269084996, guid: adf787d101299f3409846e6848434d0f,
+    type: 2}

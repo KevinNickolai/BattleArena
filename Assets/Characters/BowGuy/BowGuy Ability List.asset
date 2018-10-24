@@ -9,6 +9,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9247bce64f7a5d74faa0a834a0e9b791, type: 3}
-  m_Name: New Ability List
+  m_Name: BowGuy Ability List
   m_EditorClassIdentifier: 
-  abilities: []
+  abilities:
+  - {fileID: 11400000, guid: 43e1543e5b3148344a73904de4ec4f45, type: 2}
+  - {fileID: 11400000, guid: 43e1543e5b3148344a73904de4ec4f45, type: 2}
+  - {fileID: 11400000, guid: 43e1543e5b3148344a73904de4ec4f45, type: 2}
+  - {fileID: 11400000, guid: 43e1543e5b3148344a73904de4ec4f45, type: 2}
+  - {fileID: 11400000, guid: 43e1543e5b3148344a73904de4ec4f45, type: 2}
+  - {fileID: 11400000, guid: 43e1543e5b3148344a73904de4ec4f45, type: 2}

@@ -478,8 +478,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 435194328}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.11, y: -0, z: 1.199}
-  m_LocalScale: {x: 1.4488001, y: 0.0014388158, z: 2.519801}
+  m_LocalPosition: {x: -1.11, y: -0.000000037133, z: 1.199}
+  m_LocalScale: {x: 1.6039666, y: 0.8403344, z: 2.7896717}
   m_Children: []
   m_Father: {fileID: 1679975651}
   m_RootOrder: 22
@@ -1527,6 +1527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fa6b3a052e7c2c4889bdc78df24a42b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  abilityList: {fileID: 0}
   movementSpeed: 20
   cooldownRate: 1
   camRayLength: 100
@@ -1725,6 +1726,24 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114430410898143592, guid: f87dff02136d3df48a5b806f3c6e88d5,
+        type: 2}
+      propertyPath: shootArrow
+      value: 
+      objectReference: {fileID: 11400000, guid: 43e1543e5b3148344a73904de4ec4f45,
+        type: 2}
+    - target: {fileID: 114430410898143592, guid: f87dff02136d3df48a5b806f3c6e88d5,
+        type: 2}
+      propertyPath: ability1
+      value: 
+      objectReference: {fileID: 11400000, guid: 43e1543e5b3148344a73904de4ec4f45,
+        type: 2}
+    - target: {fileID: 114430410898143592, guid: f87dff02136d3df48a5b806f3c6e88d5,
+        type: 2}
+      propertyPath: abilityList
+      value: 
+      objectReference: {fileID: 11400000, guid: e82e0c90c17114f4f89406682834bb11,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f87dff02136d3df48a5b806f3c6e88d5, type: 2}
   m_IsPrefabAsset: 0
