@@ -295,7 +295,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fa6b3a052e7c2c4889bdc78df24a42b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 68.53
+  shootArrow: {fileID: 11400000, guid: 3a81e74b8b7f9b649b0547cc636ebe0d, type: 2}
+  movementSpeed: 15
   cooldownRate: 1
   camRayLength: 100
   floorMask: 0
@@ -319,7 +320,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1283574493028196}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1745c9b0ad4e0b3439f20569039795ab, type: 3}
   m_Name: 

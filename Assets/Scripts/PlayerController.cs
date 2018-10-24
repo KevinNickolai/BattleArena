@@ -7,7 +7,8 @@ public class PlayerController : MonoBehaviour {
 
     // components
     private Rigidbody rigidBody;
-    private Transform thisTransform;
+    
+    public AbilityList abilityList;
 
     // stats
     public float movementSpeed = 15.0f;
@@ -19,7 +20,6 @@ public class PlayerController : MonoBehaviour {
 
     void Start () {
         rigidBody = GetComponent<Rigidbody>();
-        thisTransform = GetComponent<Transform>();
 
         floorMask = LayerMask.GetMask("Floor");
     }
@@ -34,7 +34,24 @@ public class PlayerController : MonoBehaviour {
     }
 
     void Update() {
-        // this is just here for fun right now
+        if(Input.GetKeyDown(KeyCode.Mouse0)) {
+            abilityList.ReturnAbility(0).UseAbility(gameObject);
+        }
+        if(Input.GetKeyDown(KeyCode.Mouse1)) {
+            abilityList.ReturnAbility(1).UseAbility(gameObject);
+        }
+        if(Input.GetKeyDown(KeyCode.Q)) {
+            abilityList.ReturnAbility(2).UseAbility(gameObject);
+        }
+        if(Input.GetKeyDown(KeyCode.E)) {
+            abilityList.ReturnAbility(3).UseAbility(gameObject);
+        }
+        if(Input.GetKeyDown(KeyCode.R)) {
+            abilityList.ReturnAbility(4).UseAbility(gameObject);
+        }
+        if(Input.GetKeyDown(KeyCode.Space)) {
+            abilityList.ReturnAbility(5).UseAbility(gameObject);
+        }
     }
 
     void FaceMouseCursor() {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Ability")]
+//[CreateAssetMenu(fileName = "New Ability", menuName = "Ability")]
 public abstract class Ability : ScriptableObject {
 
     public string aName = "Default Ability";
@@ -12,7 +12,5 @@ public abstract class Ability : ScriptableObject {
 
     public float aBaseCooldown = 1f;
 
-    public abstract void Initialize(GameObject obj);
-    public abstract void TriggerAbility();
-
+    public abstract void UseAbility(GameObject obj);
 }
